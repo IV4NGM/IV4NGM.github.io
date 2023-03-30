@@ -291,7 +291,19 @@ input:focus{
     width: 375px;
     margin: 5px;
     flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid white;
 }
+
+.vidc:active{
+    background-color: #eee;
+    border: 1px solid #dbdbdb;
+}
+
+.vidc:hover{
+    cursor: pointer;
+}
+
 .vids{
     width: 350px;
     height: 200px;
