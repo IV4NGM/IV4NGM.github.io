@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    margin-right: 2px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+    margin-right: 20px;
+    background-color: white;
+}
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    padding: 5px;
+}
+
+.material-symbols-outlined:hover{
+    background-color: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    height: 65px;
+    background-color: white;
+    width: 100%;
+}
+
+.navc{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    margin-top: 65px;
+    width: 100%;
+    background-color: white;
+}
+
+article{
+    display: flex;
+    width: 13.5%;
+    position: fixed;
+    overflow-y: scroll;
+    height: calc(100vh - 65px);
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 15px;
+    background-color: white;
+    margin-right: 0;
+}
+
+
+article:active::-webkit-scrollbar-thumb,
+article:focus::-webkit-scrollbar-thumb,
+article:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+article::-webkit-scrollbar-thumb {
+    background-color: rgb(144, 144, 144);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+article::-webkit-scrollbar {
+    width: 8px;
+    margin: 15px;
+}
+
+.articlec{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articletitle{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(96, 96, 96);
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(144, 144, 144);
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    background-color: white;
+}
+
+.musica{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 80%;
+    background-color: white;
+    justify-content: space-between;
+}
+main{
+    background-color: white;
+    display: flex;
+    margin-top: 50px;
+    height: 1000px;
+}
+
+.navcp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 20px;
+    margin-left: 22px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.barra{
+    display: flex;
+    width: 500px;
+    padding: 5px;
+    border-radius: 40px 0px 0px 40px;
+    border: 1px solid #ccc;
+    height: 31px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 1px 2px #eee;
+    margin-right: 0;
+}
+
+.lupa{
+    border-radius: 0px 40px 40px 0px;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 42px;
+    border-left: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.lupa:hover{
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 5px #eee;
+    cursor: pointer;
+}
+
+input{
+    margin-left: 7px;
+    width: 480px;
+    margin-bottom: 1px;
+    border: 0;
+    font-size: 16px;
+}
+
+input:focus{
+    outline-width: 0;
+}
+
+.barra:focus-within{
+    border-color: #065fd4;
+    box-shadow: 0px 0px 2px inset;
+}
+
+.perfil{
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+}
+
+.perfil:hover{
+    cursor: pointer;
+}
+
+.perfil2{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.perfil2:hover{
+    cursor: pointer;
+}
+
+
+.blateral{
+    display: flex;
+    padding: 8px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.largo{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.blateral:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.navm{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.barriba{
+    display: flex;
+    padding: 8px;
+    min-width: 60px;
+    height: 35px;
+    background-color: #eee;
+    border: 0;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.barriba:hover{
+    background-color: #dbdbdb;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.mainm{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.barravid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vidc{
+    display: flex;
+    width: 375px;
+    margin: 5px;
+    flex-direction: column;
+}
+.vids{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.vids:hover{
+    cursor: pointer;
+}
+
+.vidtitulos{
+    display: flex;
+    width: 350px;
+    margin: 20px;
+}
+
+.perfilvid{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.perfilvid:hover{
+    cursor: pointer;
+}
+
+.viddescrip:hover{
+    cursor: pointer;
+}
