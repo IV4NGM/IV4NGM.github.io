@@ -28,17 +28,19 @@
                         menu
                     </span>
                 </div>
-                <img class="logo" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png" alt="Logo YouTube" title="Página de inicio de YouTube">
+                <a href="https://www.youtube.com/" target="_self"><img class="logo" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png" alt="Logo YouTube" title="Página de inicio de YouTube"></a>
             </div>
             <div class="navcp">
-                <div class="barra">
-                    <input type="text" placeholder="Buscar" id="search">
-                </div>
-                <div>
-                    <button class="lupa" onclick="buscar()" title="Buscar" id="search_button"><span class="material-symbols-outlined">
-                        search
-                    </span>
-                    </button>
+                <div class="barrac">
+                    <div class="barra">
+                        <input type="text" placeholder="Buscar" id="search">
+                    </div>
+                    <div class="lupac">
+                        <button class="lupa" onclick="buscar()" title="Buscar" id="search_button"><span class="material-symbols-outlined">
+                            search
+                        </span>
+                        </button>
+                    </div>
                 </div>
                 <div style="margin-left: 10px;">
                     <span class="material-symbols-outlined" title="Haz búsquedas por voz" style="font-variation-settings: 'FILL' 1">
@@ -66,21 +68,21 @@
     <div class="container">
         <article>
             <div class="articlec">
-                <button class="blateral" style="background-color: #eee;" title="Inicio"><span class="material-symbols-outlined" style="margin-right: 15px; font-variation-settings: 'FILL' 1">
+                <button class="blateral" style="background-color: #eee;" title="Inicio" onclick="window.open('https://www.youtube.com/', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px; font-variation-settings: 'FILL' 1">
                     home
                     </span>Inicio</button>
-                <button class="blateral" title="Shorts"><span class="material-symbols-outlined" style="margin-right: 15px;">
+                <button class="blateral" title="Shorts" onclick="window.open('https://www.youtube.com/shorts', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px;">
                     theaters
                     </span>Shorts</button>
-                <button class="blateral" title="Suscripciones"><span class="material-symbols-outlined" style="margin-right: 15px;">
+                <button class="blateral" title="Suscripciones" onclick="window.open('https://www.youtube.com/feed/subscriptions', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px;">
                     subscriptions
                     </span>Suscripciones</button>
             </div>
             <div class="articlec">
-                <button class="blateral" title="Mi biblioteca"><span class="material-symbols-outlined" style="margin-right: 15px;">
+                <button class="blateral" title="Mi biblioteca" onclick="window.open('https://www.youtube.com/feed/library', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px;">
                     video_library
                     </span>Mi biblioteca</button>
-                <button class="blateral" title="Historial"><span class="material-symbols-outlined" style="margin-right: 15px;">
+                <button class="blateral" title="Historial" onclick="window.open('https://www.youtube.com/feed/history', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px;">
                     history
                     </span>Historial</button>
                 <button class="blateral" title="Mis videos"><span class="material-symbols-outlined" style="margin-right: 15px;">
@@ -98,7 +100,7 @@
             </div>
             <div class="articlec">
                 <p class="articletitle">Suscripciones</p>
-                <button class="blateral" title="OneRepublic"><img class="perfil" src="https://img-www.tf-cdn.com/artist/10/onerepublic.jpeg?_v=20220330123439&fit=crop&crop=faces%20entropy&w=1200&h=630" alt="OneRepublic" style="margin-right: 15px;">OneRepublic</button>
+                <button class="blateral" title="OneRepublic" onclick="window.open('https://www.youtube.com/channel/UCi4EDAgjULwwNBHOg1aaCig')"><img class="perfil" src="https://img-www.tf-cdn.com/artist/10/onerepublic.jpeg?_v=20220330123439&fit=crop&crop=faces%20entropy&w=1200&h=630" alt="OneRepublic" style="margin-right: 15px;">OneRepublic</button>
                 <button class="blateral" title="Viajando Ando"><img class="perfil" src="https://img.freepik.com/vector-premium/icono-avion-viaje_18591-39662.jpg?w=2000" alt="Viajando Ando" style="margin-right: 15px;">Viajando Ando</button>
                 <button class="blateral" title="Todo Pelis"><img class="perfil" src="https://previews.123rf.com/images/jemastock/jemastock1610/jemastock161003770/63998264-rollo-de-pel%C3%ADcula-y-palomitas-de-ma%C3%ADz-icono-pel%C3%ADcula-de-cine-de-pel%C3%ADculas-de-v%C3%ADdeo-y-el-tema-de.jpg" alt="Todo Pelis" style="margin-right: 15px;">Todo Pelis</button>
                 <button class="blateral" title="Música Clásica"><img class="perfil" src="https://educacion30.b-cdn.net/wp-content/uploads/2019/10/music-978x652.jpg" alt="Música Clásica" style="margin-right: 15px;"><div class="largo">Música Clásica</div></button>
