@@ -36,3 +36,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
     });
+
+function colapsar(){
+    document.getElementById('aprincipal').classList.toggle('articlecollapse');
+    document.getElementsByClassName('right')[0].classList.toggle('rightcollapse');
+    document.querySelectorAll('.vidc').forEach(p => p.classList.toggle('vidccollapse'));
+    document.querySelectorAll('.vids').forEach(p => p.classList.toggle('vidscollapse'));
+    document.getElementsByClassName('carousel-wrap')[0].classList.toggle('carousel-wrap-collapse');
+    if(document.getElementById('asecundario').style.visibility==='visible'){
+        document.getElementById('asecundario').style.visibility='collapse';
+    } else{
+        document.getElementById('asecundario').style.visibility='visible';
+    };
+}

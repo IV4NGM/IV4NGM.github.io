@@ -8,8 +8,8 @@ body{
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    margin-left: 9px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 18px;
     background-color: white;
 }
 .material-symbols-outlined{
@@ -63,6 +63,29 @@ article{
     margin-right: 0;
 }
 
+#asecundario{
+    display: flex;
+    width: 6%;
+    background-color: white;
+    visibility: collapse;
+    overflow: hidden;
+    position: fixed;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0;
+    margin-top: 65px;
+}
+
+.articlecollapse{
+    visibility: collapse;
+}
+
+.asecundarioc{
+    visibility: visible;
+}
+
+
 
 article:active::-webkit-scrollbar-thumb,
 article:focus::-webkit-scrollbar-thumb,
@@ -112,8 +135,12 @@ body::-webkit-scrollbar-thumb:hover{
 .right{
     display: flex;
     flex-direction: column;
-    margin-left: 18%;
+    margin-left: 19%;
     background-color: white;
+}
+
+.rightcollapse{
+    margin-left: 3%;
 }
 
 .carousel-wrap {
@@ -121,7 +148,12 @@ body::-webkit-scrollbar-thumb:hover{
     height: 50px;
     width: 78%;
     background-color: white;
-  }
+}
+
+.carousel-wrap-collapse{
+    margin-left: 2.3%;
+    width: 93%;
+}
 
 main{
     background-color: white;
@@ -243,6 +275,21 @@ input:focus{
     font-size: 14px;
 }
 
+.blateralcollapsed{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 70%;
+    padding: 8px;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 .largo{
     display: inline-block;
     text-overflow: ellipsis;
@@ -253,6 +300,11 @@ input:focus{
 .blateral:hover{
     background-color: #eee;
     cursor: pointer;
+}
+
+.blateralcollapsed:hover{
+    background-color: #eee;
+    cursor: pointer;    
 }
 
 .navm{
@@ -314,10 +366,10 @@ input:focus{
   }
   
   .owl-carousel .owl-nav .prev-slide{
-      left: -35px;
+      left: -15px;
   }
   .owl-carousel .owl-nav .next-slide{
-      right: -35px;
+      right: -15px;
   }
 
 
@@ -336,11 +388,15 @@ input:focus{
 
 .vidc{
     display: flex;
-    width: 375px;
-    margin: 5px;
+    width: 370px;
+    margin: 1px;
     flex-direction: column;
     border-radius: 5px;
     border: 1px solid white;
+}
+
+.vidccollapse{
+    width: 350px;
 }
 
 .vidc:active{
@@ -353,11 +409,16 @@ input:focus{
 }
 
 .vids{
-    width: 350px;
+    width: 360px;
     height: 200px;
     margin: 10px;
     border-radius: 20px;
 }
+
+.vidscollapse{
+    width: 340px;
+}
+
 .vids:hover{
     cursor: pointer;
 }

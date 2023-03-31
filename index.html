@@ -24,7 +24,7 @@
         <div class="navc">
             <div class="navcp">
                 <div class="menu">
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" onclick="colapsar()">
                         menu
                     </span>
                 </div>
@@ -66,7 +66,7 @@
         </div>
     </nav>
     <div class="container">
-        <article>
+        <article id="aprincipal">
             <div class="articlec">
                 <button class="blateral" style="background-color: #eee;" title="Inicio" onclick="window.open('https://www.youtube.com/', '_self')"><span class="material-symbols-outlined" style="margin-right: 15px; font-variation-settings: 'FILL' 1">
                     home
@@ -164,6 +164,22 @@
                 © 2023 Iván G M
             </div>
         </div>
+        </article>
+        <article id="asecundario">
+            <div class="articlec" style="border: 0;">
+                <button class="blateralcollapsed" style="background-color: #eee;" title="Inicio" onclick="window.open('https://www.youtube.com/', '_self')"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">
+                    home
+                    </span>Inicio</button>
+                <button class="blateralcollapsed" title="Shorts" onclick="window.open('https://www.youtube.com/shorts', '_self')"><span class="material-symbols-outlined">
+                    theaters
+                    </span>Shorts</button>
+                <button class="blateralcollapsed" title="Suscripciones" onclick="window.open('https://www.youtube.com/feed/subscriptions', '_self')"><span class="material-symbols-outlined">
+                    subscriptions
+                    </span>Suscripciones</button>
+                <button class="blateralcollapsed" title="Mi biblioteca" onclick="window.open('https://www.youtube.com/feed/library', '_self')"><span class="material-symbols-outlined">
+                    video_library
+                    </span>Mi biblioteca</button>
+            </div>
         </article>
         <div class="right">
             <div class="carousel-wrap">
