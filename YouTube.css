@@ -378,13 +378,17 @@ input:focus{
 
 
 .mainm{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 380px);
     margin-left: 25px;
     margin-top: 25px;
     background-color: white;
-    flex-wrap: wrap;
     justify-content: space-around;
-    width: 85vw;
+    width: 88vw;
+}
+
+.mainmcollapse{
+    grid-template-columns: repeat(auto-fill, 330px);
 }
 
 .barravid{
@@ -434,6 +438,10 @@ input:focus{
     display: flex;
     width: 350px;
     margin: 20px;
+}
+
+.vidtituloscollapse{
+    width: 300px;
 }
 
 .perfilvid{
