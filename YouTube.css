@@ -52,7 +52,7 @@ nav{
 
 article{
     display: flex;
-    width: 13.5%;
+    width: 13.5vw;
     position: fixed;
     overflow-y: scroll;
     height: calc(100vh - 65px);
@@ -65,7 +65,7 @@ article{
 
 #asecundario{
     display: flex;
-    width: 6%;
+    width: 6vw;
     background-color: white;
     visibility: collapse;
     overflow: hidden;
@@ -114,6 +114,9 @@ article::-webkit-scrollbar {
     font-size: 16px;
     margin-left: 5px;
     margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -135,24 +138,24 @@ body::-webkit-scrollbar-thumb:hover{
 .right{
     display: flex;
     flex-direction: column;
-    margin-left: 19%;
+    margin-left: 19vw;
     background-color: white;
 }
 
 .rightcollapse{
-    margin-left: 3%;
+    margin-left: 5vw;
 }
 
 .carousel-wrap {
     position: fixed;
     height: 50px;
-    width: 78%;
+    width: 78vw;
     background-color: white;
 }
 
 .carousel-wrap-collapse{
-    margin-left: 2.3%;
-    width: 93%;
+    margin-left: 0.5vw;
+    width: 91.5vw;
 }
 
 main{
@@ -160,6 +163,7 @@ main{
     display: flex;
     margin-top: 50px;
     height: 1000px;
+    justify-content: center;
 }
 
 .navcp{
@@ -190,7 +194,7 @@ main{
 
 .barra{
     display: flex;
-    width: 530px;
+    width: 35vw;
     border-radius: 40px 0px 0px 40px;
     border: 1px solid #ccc;
     height: calc(100%-2px);
@@ -225,7 +229,7 @@ button.lupa:hover{
 }
 
 input{
-    width: 490px;
+    width: 32vw;
     margin-bottom: 1px;
     border: 0;
     font-size: 16px;
@@ -264,11 +268,11 @@ input:focus{
 .blateral{
     display: flex;
     padding: 8px;
-    width: 200px;
+    width: 13vw; /* 200px */
     height: 40px;
     background-color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     justify-content: left;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -283,7 +287,7 @@ input:focus{
     padding: 8px;
     background-color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     justify-content: center;
@@ -379,6 +383,8 @@ input:focus{
     margin-top: 25px;
     background-color: white;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85vw;
 }
 
 .barravid{
@@ -396,7 +402,7 @@ input:focus{
 }
 
 .vidccollapse{
-    width: 350px;
+    width: 320px;
 }
 
 .vidc:active{
@@ -413,10 +419,11 @@ input:focus{
     height: 200px;
     margin: 10px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .vidscollapse{
-    width: 340px;
+    width: 310px;
 }
 
 .vids:hover{
