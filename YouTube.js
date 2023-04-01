@@ -30,7 +30,7 @@ $('.owl-carousel').owlCarousel({
             slideBy: 2,
             items: 3
         },
-        1000: {
+        1080: {
             slideBy: 5,
             items: 6
         }
@@ -51,3 +51,17 @@ function colapsar(){
         document.getElementById('asecundario').style.visibility='visible';
     };
 }
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+      if(document.getElementById('asecundario').style.visibility!=='visible'){
+        colapsar()
+      }
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 1080px)")
+  x.addEventListener('change', myFunction) // Attach listener function on state changes
+  myFunction(x) // Call listener function at run time
+
+

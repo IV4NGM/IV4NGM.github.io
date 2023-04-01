@@ -81,10 +81,6 @@ article{
     visibility: collapse;
 }
 
-.asecundarioc{
-    visibility: visible;
-}
-
 
 
 article:active::-webkit-scrollbar-thumb,
@@ -289,7 +285,7 @@ input:focus{
     border: 0;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 0.65vw;
     justify-content: center;
     align-items: center;
 }
@@ -457,4 +453,34 @@ input:focus{
 
 .viddescrip:hover{
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1080px){
+    .menu{
+        pointer-events: none;
+    }
+    .blateralcollapsed{
+        font-size: 0;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    #asecundario{
+        visibility: collapse !important;
+    }
+    .remove750{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .barra{
+        display: none;
+    }
+    .lupa{
+        width: 40px;
+        border-radius: 40px;
+        border: 1px solid #ccc;
+    }
 }
