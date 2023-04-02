@@ -455,6 +455,21 @@ input:focus{
     cursor: pointer;
 }
 
+.parent-class{
+    display: flex;
+}
+
+.displaynone{
+    display: none;
+}
+
+.centering{
+    justify-content: center;
+}
+
+.responsive{
+    display: none;
+}
 
 @media only screen and (max-width: 1080px){
     .menu{
@@ -472,15 +487,30 @@ input:focus{
     .remove750{
         display: none;
     }
+    .rightcollapse{
+        margin-left: 0vw;
+    }
 }
 
 @media only screen and (max-width: 500px){
     .barra{
+        width: 60vw;
         display: none;
+    }
+    .show{
+        display: flex !important;
+    }
+    input{
+        width: 50vw;
     }
     .lupa{
         width: 40px;
         border-radius: 40px;
         border: 1px solid #ccc;
+    }
+    .lupanormal{
+        border-radius: 0px 40px 40px 0px;
+        border: 1px solid #ccc;
+        border-left: 0;
     }
 }

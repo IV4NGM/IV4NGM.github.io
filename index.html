@@ -22,17 +22,22 @@
 <body>
     <nav>
         <div class="navc">
-            <div class="navcp">
+            <div class="navcp" id="menuylogo">
                 <div class="menu">
-                    <span class="material-symbols-outlined" onclick="colapsar()">
+                    <span class="material-symbols-outlined" onclick="colapsar(); cambio();">
                         menu
                     </span>
                 </div>
                 <a href="https://www.youtube.com/" target="_self"><img class="logo" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png" alt="Logo YouTube" title="Página de inicio de YouTube"></a>
             </div>
-            <div class="navcp">
+            <div class="navcp" id="element1">
+                <div style="display: flex; align-items: center;" class="responsive">
+                    <span class="material-symbols-outlined responsive" id="back_responsive" onclick="back()">
+                        arrow_back
+                    </span>
+                </div>
                 <div class="barrac">
-                    <div class="barra">
+                    <div class="barra" id="barra">
                         <input type="text" placeholder="Buscar" id="search">
                     </div>
                     <div class="lupac">
@@ -42,25 +47,28 @@
                         </button>
                     </div>
                 </div>
-                <div style="margin-left: 10px;" class="remove750">
+                <div style="margin-left: 0.67px;" class="remove750">
                     <span class="material-symbols-outlined" title="Haz búsquedas por voz" style="font-variation-settings: 'FILL' 1">
                         mic
                     </span>
                 </div>
             </div>
-            <div class="navcp">
-                <div style="margin-left: 15px;" class="remove750">
+            <div class="navcp" id="element2">
+                <div style="margin-left: 1vw;" class="remove750">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0" title="Crear">
                         video_call
                     </span>
                 </div>
-                <div style="margin-left: 15px;" class="remove750">
+                <div style="margin-left: 1vw;" class="remove750">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0" title="Notificaciones">
                         notifications
-                        </span>
+                    </span>
                 </div>
-                <div style="margin-left: 15px;">
-                    <img src="./assets/playa.jpg" alt="Perfil Iván G M" title="Iván G M" class="perfil">
+                <div style="margin-left: 1vw;">
+                    <img src="./assets/playa.jpg" alt="Perfil Iván G M" title="Iván G M" class="perfil" id="img_perfil">
+                    <span class="material-symbols-outlined responsive" title="Haz búsquedas por voz" style="font-variation-settings: 'FILL' 1" id="mic_responsive">
+                        mic
+                    </span>
                 </div>
             </div>
         </div>
