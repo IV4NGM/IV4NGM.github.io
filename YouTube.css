@@ -476,7 +476,7 @@ input:focus{
     margin-top: 65px;
     height: calc(100vh - 65px);
     width: 100vw;
-    background-color: #aaa;
+    background-color: black;
     opacity: 0.2;
     z-index: 1;
     display: none;
