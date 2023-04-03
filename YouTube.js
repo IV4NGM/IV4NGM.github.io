@@ -64,12 +64,21 @@ function expandir(){
     document.getElementById('search_button').classList.toggle('lupanormal');
     document.getElementById('img_perfil').classList.toggle('displaynone');
     document.querySelectorAll('.responsive').forEach(p => p.classList.toggle('show'));
-    document.getElementById('search_button').setAttribute("onClick", "buscar()");
+    document.getElementById('search_button').setAttribute("onClick", "buscar(); coveroff()");
+}
+
+function coveron(){
+    document.getElementById('cover').style.display='block';
+}
+
+function coveroff(){
+    document.getElementById('cover').style.display='none';
+    back();
 }
 
 function back(){
     expandir();
-    document.getElementById('search_button').setAttribute("onClick", "expandir()");
+    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
 }
 
 function colapsar(){
@@ -113,7 +122,7 @@ if (isSmallScreen) {
     element1.parentNode.insertBefore(parentElement, element1);
     parentElement.appendChild(element1);
     parentElement.appendChild(element2);
-    document.getElementById('search_button').setAttribute("onClick", "expandir()");
+    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
 }
 
 // Listen for changes in screen width
@@ -128,7 +137,7 @@ mediaQuery.addEventListener("change", function(event) {
         element1.parentNode.insertBefore(parentElement, element1);
         parentElement.appendChild(element1);
         parentElement.appendChild(element2);
-        document.getElementById('search_button').setAttribute("onClick", "expandir()");
+        document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
     } else {
         // Screen width is greater than or equal to 500px
         // Unwrap elements from parent div
@@ -147,7 +156,8 @@ mediaQuery.addEventListener("change", function(event) {
 function myFunction2(x) {
     if (x.matches) { // If media query matches
         if(document.getElementById('menuylogo').classList.contains('displaynone')){
-        expandir();
+        coveroff()
+        document.getElementById('search_button').setAttribute("onClick", "buscar()");
         }
     }
 }
