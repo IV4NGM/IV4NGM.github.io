@@ -78,7 +78,11 @@ function coveroff(){
 
 function back(){
     expandir();
-    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
+    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron(); makefocus()");
+}
+
+function makefocus(){
+    document.getElementById('search').focus();
 }
 
 function colapsar(){
@@ -122,7 +126,7 @@ if (isSmallScreen) {
     element1.parentNode.insertBefore(parentElement, element1);
     parentElement.appendChild(element1);
     parentElement.appendChild(element2);
-    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
+    document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron(); makefocus()");
 }
 
 // Listen for changes in screen width
@@ -137,7 +141,7 @@ mediaQuery.addEventListener("change", function(event) {
         element1.parentNode.insertBefore(parentElement, element1);
         parentElement.appendChild(element1);
         parentElement.appendChild(element2);
-        document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron()");
+        document.getElementById('search_button').setAttribute("onClick", "expandir(); coveron(); makefocus()");
     } else {
         // Screen width is greater than or equal to 500px
         // Unwrap elements from parent div
