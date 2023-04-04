@@ -144,6 +144,11 @@ body::-webkit-scrollbar-thumb:hover{
     background-color: white;
     position: fixed;
     height: 50px;
+    margin-left: 14vw;
+}
+
+.blancocollapse{
+    margin-left: 5vw;
 }
 
 .rightcollapse{

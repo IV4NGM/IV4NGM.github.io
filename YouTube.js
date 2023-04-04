@@ -76,6 +76,7 @@ function makefocus(){
 function colapsar(){
     document.getElementById('aprincipal').classList.toggle('articlecollapse');
     document.getElementsByClassName('right')[0].classList.toggle('rightcollapse');
+    document.getElementsByClassName('blanco')[0].classList.toggle('blancocollapse');
     document.getElementsByClassName('mainm')[0].classList.toggle('mainmcollapse');
     document.querySelectorAll('.vidc').forEach(p => p.classList.toggle('vidccollapse'));
     document.querySelectorAll('.vids').forEach(p => p.classList.toggle('vidscollapse'));
