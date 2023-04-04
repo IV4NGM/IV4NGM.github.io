@@ -41,20 +41,8 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     dots: false,
     navText:["<div class='nav-btn prev-slide'><img src='./assets/arrow_left.png' style='width: 12px; height: 12px' title='Anterior'></div>","<div class='nav-btn next-slide'><img src='./assets/arrow_right.png' style='width: 12px; height: 12px' title='Siguiente'></div>"],
-    responsive: {
-        0: {
-            slideBy: 1,
-            items: 1
-        },
-        600: {
-            slideBy: 2,
-            items: 3
-        },
-        1080: {
-            slideBy: 5,
-            items: 6
-        }
-    }
+    autoWidth: true,
+    slideBy:3,
 });
 
 function expandir(){
