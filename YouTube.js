@@ -41,8 +41,20 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     dots: false,
     navText:["<div class='nav-btn prev-slide'><img src='./assets/arrow_left.png' style='width: 12px; height: 12px' title='Anterior'></div>","<div class='nav-btn next-slide'><img src='./assets/arrow_right.png' style='width: 12px; height: 12px' title='Siguiente'></div>"],
-    autoWidth: true,
-    slideBy:3,
+    responsive: {
+        0: {
+            slideBy: 1,
+            items: 1
+        },
+        600: {
+            slideBy: 2,
+            items: 3
+        },
+        1080: {
+            slideBy: 5,
+            items: 6
+        }
+    }
 });
 
 function expandir(){
@@ -76,7 +88,6 @@ function makefocus(){
 function colapsar(){
     document.getElementById('aprincipal').classList.toggle('articlecollapse');
     document.getElementsByClassName('right')[0].classList.toggle('rightcollapse');
-    document.getElementsByClassName('blanco')[0].classList.toggle('blancocollapse');
     document.getElementsByClassName('mainm')[0].classList.toggle('mainmcollapse');
     document.querySelectorAll('.vidc').forEach(p => p.classList.toggle('vidccollapse'));
     document.querySelectorAll('.vids').forEach(p => p.classList.toggle('vidscollapse'));

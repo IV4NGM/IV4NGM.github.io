@@ -136,19 +136,6 @@ body::-webkit-scrollbar-thumb:hover{
     flex-direction: column;
     margin-left: 19vw;
     background-color: white;
-    align-items: center;
-}
-
-.blanco{
-    width: 90vw;
-    background-color: white;
-    position: fixed;
-    height: 50px;
-    margin-left: 14vw;
-}
-
-.blancocollapse{
-    margin-left: 5vw;
 }
 
 .rightcollapse{
@@ -158,36 +145,13 @@ body::-webkit-scrollbar-thumb:hover{
 .carousel-wrap {
     position: fixed;
     height: 50px;
-    width: calc(80vw - 100px);
+    width: 78vw;
     background-color: white;
 }
 
 .carousel-wrap-collapse{
     margin-left: 0.5vw;
-    width: calc(91.5vw - 100px) !important;
-}
-
-.carousel-wrap {
-    position: fixed;
-    height: 50px;
-    width: calc(78vw - 100px);
-    background-color: white;
-}
-
-.carousel-wrap::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background: linear-gradient(to left, rgba(255,255,255,0), white);
-    z-index: 1;
-}
-
-.carousel-wrap::after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255,255,255,0), white);
+    width: 91.5vw;
 }
 
 main{
@@ -195,7 +159,6 @@ main{
     display: flex;
     margin-top: 50px;
     height: 1000px;
-    width: 100%;
     justify-content: center;
 }
 
@@ -373,41 +336,41 @@ input:focus{
 .owl-carousel .owl-nav{
     overflow: hidden;
     height: 0px;
-}
-
-.owl-carousel .item {
-    display: flex;
-    justify-content: center;
-}
-.owl-carousel .nav-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    position: absolute;
-    width: 25px;
-    cursor: pointer;
-    top: 2px;
-    border-radius: 50px;
-    padding: 5px;
-}
-
-.owl-carousel .nav-btn:hover{
+  }
+  
+  .owl-carousel .item {
+      display: flex;
+      justify-content: center;
+  }
+  .owl-carousel .nav-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px;
+      position: absolute;
+      width: 25px;
+      cursor: pointer;
+      top: 2px;
+      border-radius: 50px;
+      padding: 5px;
+  }
+  
+  .owl-carousel .nav-btn:hover{
     background-color: #eee;
-}
-
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled{
+  }
+  
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled{
     pointer-events: none;
     opacity: 0;
-}
+  }
   
-.owl-carousel .owl-nav .prev-slide{
-    left: -50px;
-}
-.owl-carousel .owl-nav .next-slide{
-    right: -50px;
-}
+  .owl-carousel .owl-nav .prev-slide{
+      left: -15px;
+  }
+  .owl-carousel .owl-nav .next-slide{
+      right: -15px;
+  }
 
 
 .mainm{
@@ -513,7 +476,7 @@ input:focus{
     margin-top: 65px;
     height: calc(100vh - 65px);
     width: 100vw;
-    background-color: #aaa;
+    background-color: black;
     opacity: 0.2;
     z-index: 1;
     display: none;
