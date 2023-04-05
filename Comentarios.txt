@@ -1,0 +1,5 @@
+Lo que me gustó más fue organizar los elementos para que se parecieran a los de la página web original, y poder añadirle funcionalidades con JS y hacerlo responsive.
+
+Lo que se me facilitó fue el maquetado del sitio web, y el uso de flexbox y grid.
+
+Lo que me costó más fue hacer el scroll independiente porque no encontraba cómo establecer la altura, y establecer los ajustes necesarios para hacer el carrusel de botones, así como encontrar la herramienta que me podría servir para ello.
