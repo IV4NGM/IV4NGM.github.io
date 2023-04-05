@@ -481,6 +481,7 @@ input:focus{
     opacity: 0.2;
     z-index: 1;
     display: none;
+    left: 0;
 }
 
 @media only screen and (max-width: 1080px){
