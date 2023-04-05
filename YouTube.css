@@ -399,6 +399,7 @@ input:focus{
     flex-direction: column;
     border-radius: 5px;
     border: 1px solid white;
+    align-items: center;
 }
 
 .vidccollapse{
